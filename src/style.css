@@ -1,0 +1,137 @@
+/*Header styles*/
+body{
+  font-family: 'Kumbh sans';
+  font-size: 16px;
+}
+.h-div{
+  display: inline-flex;
+  width:100%;
+  height: 30px;
+  padding:10px;
+  margin:5px -10px;
+
+}
+.h-div h3{
+  font-size: 23px;
+  font-weight: 700;
+  margin-top: -7px;
+  margin-left: 10px;
+}
+.h-div--cart{
+  opacity:65%;
+  position: absolute;
+  right: 55px;
+  
+}
+.h-div--bars{
+  opacity: 65%;
+  width:25px;
+  margin-left:10px;
+}
+.h-div img{
+  position: absolute;
+  right: 10px;
+  top:14px;
+  height: 30px;
+  width: 30px;
+}
+.top-nav{
+  align-items: center;
+  margin-top: -21px;
+  margin-left: 10px;
+}
+.top-nav--wrapper li{
+    margin-right: 20px;
+    list-style: none;
+    display:inline-flex;
+    align-items: center;
+    font-size: 22px;
+}
+.top-nav--close{
+  display: none;
+}
+/*main content styles*/
+.m-div{
+  width:100%;
+}
+.m-div--image{
+  width: 100vw;
+  margin-left: -8px;
+}
+.m-div--image img{
+  width: 100%;
+}
+.m-div--cont{
+  padding: 5px;
+}
+.m-div--cont h2{
+   color: hsl(25, 100%, 60%);
+}
+.m-div--list{
+    width: 100%;
+}
+.m-div--list ul{
+  margin-left: -40px;
+}
+.m-div--list li{
+  list-style: none;
+  display: inline-flex;
+}
+.m-div--list li:nth-of-type(2){
+  background:lightgray;
+  padding: 5px;
+  border-radius: 2px;
+  color: gray;
+  margin-left: 5%;
+}
+.m-div--list li:nth-of-type(3){
+    margin-left: 55%;
+    color: gray;
+    text-decoration: line-through;
+}
+.m-div-i{
+  opacity:65%;
+  padding-right:20px;
+}
+.m-div button{
+  background-color: hsl(26, 100%, 55%);
+  border:hsl(26, 100%, 55%);
+  width: 100%;
+  padding: 10px;
+  height: 25%;
+  border-radius: 3px;
+  font-size:17px;
+}
+@media screen and (max-width:500px)
+{
+  .top-nav--wrapper li{
+    display: block;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  .top-nav{
+    position: absolute;
+    background-color: white;
+    left:-300px ;
+    top:0px;
+    padding: 20px;
+    height: 100%;
+    box-shadow: 0 10px 15px gray;
+  }
+  .top-nav.active{
+    left:-18px;
+    transition: 0.4s ease-in;
+  }
+  .top-nav--close{
+    display: block;
+    margin-top: 32px;
+    opacity: 65%;
+    margin-left:38px ;
+  }
+}
+@media screen and (max-width:375px){
+  .m-div--list li:nth-of-type(3){
+    margin-left:40%;
+  }
+}
