@@ -172,7 +172,6 @@ body{
 .slider-wrapper{
   display: flex;
   width: 100%;
-  animation: move-right 5s ease-in-out infinite alternate;
 
 }
 
@@ -186,7 +185,7 @@ body{
     100%{
       transform:translateX(-300%)
     }
-    10
+    
 }
 /*media query*/
 @media screen and (max-width:500px)
