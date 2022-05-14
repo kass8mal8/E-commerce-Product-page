@@ -23,6 +23,7 @@ const Main=()=>{
   return (
     <div className="m-div">
       <div className="m-div--image">
+       
         <div className="m-div--image-icons">
         <ul>
           <li>
@@ -32,8 +33,9 @@ const Main=()=>{
         <FontAwesomeIcon icon={faAngleRight} />
         </li>
         </ul>
+       <img src={image} />
+
       </div>
-<img src={image} />
       </div>
       <div className="m-div--cont">
           <h2>sneakers company</h2>
