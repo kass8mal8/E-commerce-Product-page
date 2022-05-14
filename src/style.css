@@ -169,22 +169,17 @@ body{
   width: 100%;
   overflow: hidden;
 }
-.slider-wrapper{
+#slider-wrapper{
   display: flex;
   width: 100%;
-
+  
 }
 
 @keyframes move-right{
     33%{
       transform: translateX(-100%);
     }
-    66%{
-      transform: translateX(-200%);
-    }
-    100%{
-      transform:translateX(-300%)
-    }
+  
     
 }
 /*media query*/

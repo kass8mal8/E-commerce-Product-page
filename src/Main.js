@@ -29,7 +29,10 @@ const images=[
   const handleSlider=(e)=>{
     document.getElementById("slideImage").src=e
   }
-  
+  const handleRight=()=>{
+    document.getElementById("slider-wrapper").style.animation="move-right 3s 1"
+    
+  }
   return(
     <div className="m-div">
     
@@ -41,11 +44,11 @@ const images=[
          <FontAwesomeIcon icon={faAngleLeft} />
          </li>
          <li>
-        <FontAwesomeIcon icon={faAngleRight} />
+        <FontAwesomeIcon icon={faAngleRight} onClick={handleRight}/>
         </li>
         </ul>    
         <div className="slider">
-          <div className="slider-wrapper">
+          <div id="slider-wrapper">
         <img src={image} id="slideImage" />
          {images.map(image=>(
            <img src={image.src} className="slider-sec" onClick={()=>handleSlider(image.src)} />
