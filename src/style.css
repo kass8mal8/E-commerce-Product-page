@@ -56,7 +56,7 @@ body{
 /*main content styles*/
 .m-div{
   width:100%;
-  margin-top: -4px;
+  margin-top: -40px;
 }
 .m-div--image{
   width: 100vw;
@@ -66,7 +66,10 @@ body{
    list-style: none;
    display: inline-flex;
    position: absolute;
-   top: 200px;
+   top:50%;
+   background: white;
+   padding:10px;
+   border-radius: 0px;
 }
 .m-div--image-icons li:nth-of-type(1){
   left: 20px;
@@ -183,5 +186,8 @@ body{
 @media screen and (max-width:375px){
   .m-div--list li:nth-of-type(3){
     margin-left:40%;
+  }
+  .m-div--image-icons li{
+    top: 40%;
   }
 }
