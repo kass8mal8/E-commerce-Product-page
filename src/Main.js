@@ -13,7 +13,12 @@ const Main=()=>{
        setCount(count+1)
   }
   const handleMinus=()=>{
-    setCount(count-1)
+      if(count==0){
+        return false
+      }
+      else{
+            setCount(count-1)
+      }
   }
   return (
     <div className="m-div">
