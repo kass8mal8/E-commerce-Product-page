@@ -1,10 +1,12 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
   import {faCartShopping } from '@fortawesome/free-solid-svg-icons' 
-
+import {useState} from 'react'
 
 const Main=()=>{
   const image="https://lvcas-ca.github.io/E-commerce-product-page/images/image-product-1.jpg"
+
+  const [count,setCount]=useState(0)
   return (
     <div className="m-div">
       <div className="m-div--image">
