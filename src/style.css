@@ -126,6 +126,7 @@ body{
   font-size:17px;
   color: white;
   font-weight: bold;
+  margin: 5px auto;
 }
 .m-div--mod li{
   list-style: none;
@@ -195,5 +196,20 @@ body{
   }
   .m-div--image-icons li{
     top: 40%;
+  }
+}
+@media screen and (min-width:425px){
+  .m-div{
+    display: flex;
+  }
+  .m-div--image{
+    width: 50%;
+  }
+  .m-div--cont{
+    width: 50%;
+    margin-top: 10px;
+  }
+  .m-div--image-icons li{
+    display: none;
   }
 }
