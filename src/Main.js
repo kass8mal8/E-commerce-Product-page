@@ -31,9 +31,17 @@ const Main=()=>{
           </ul>
           </div>
           <div className="m-div--mod">
-            <FontAwesomeIcon icon={faMinus}className="m-div--mod-minus"></FontAwesomeIcon><p>{count} </p>
-            <FontAwesomeIcon icon={faPlus}className="m-div--mod-plus"></FontAwesomeIcon>
-
+            <ul>
+              <li>
+                <FontAwesomeIcon icon={faMinus}></FontAwesomeIcon>
+               </li>
+               <li>
+            {count} 
+               </li>
+               <li>
+                <FontAwesomeIcon icon={faPlus}></FontAwesomeIcon>
+               </li>
+             </ul>
           </div>
           <button><FontAwesomeIcon icon={faCartShopping} className="m-div-i"></FontAwesomeIcon>add to cart</button>
       </div>
