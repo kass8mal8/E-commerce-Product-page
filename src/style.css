@@ -39,7 +39,10 @@ body{
   align-items: center;
   margin-top: -21px;
   margin-left: 10px;
+  height: 100vh;
+
 }
+
 .top-nav--wrapper li{
     margin-right: 20px;
     list-style: none;
@@ -85,7 +88,7 @@ body{
   margin-left: 5%;
 }
 .m-div--list li:nth-of-type(3){
-    margin-left: 55%;
+    margin-left: 51%;
     color: gray;
     text-decoration: line-through;
 }
@@ -108,22 +111,27 @@ body{
   list-style: none;
   display: inline-flex;
 }
+.m-div ul{
+  margin-right: 15%;
+}
 .m-div--mod{
   width: 98%;
   background-color: lightgray;
   padding: 3px;
   margin: 5px 1px;
   border-radius: 3px;
+  text-align: center;
   } 
-.m-div--mod-li:nth-of-type(1){
+.m-div--mod li:nth-of-type(1){
   color: hsl(25, 100%, 60%);
-  margin-left: 5%;
-  margin-right: 10%;
+  margin-right:40%;
 }
-.m-div--mod-li:nth-of-type(3){
+.m-div--mod li:nth-of-type(3){
    color: hsl(25, 100%, 60%);
-   margin-left: 10%;
-   margin-right: 5%;
+   margin-left: 40%;
+}
+.m-div--mod li:nth-of-type(2){
+  font-size: 20px;
 }
 @media screen and (max-width:500px)
 {
@@ -155,6 +163,6 @@ body{
 }
 @media screen and (max-width:375px){
   .m-div--list li:nth-of-type(3){
-    margin-left:40%;
+    margin-left:32%;
   }
 }
