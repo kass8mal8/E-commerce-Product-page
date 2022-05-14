@@ -20,16 +20,13 @@ const Main=()=>{
             setCount(count-1)
       }
   }
-  const images=[
-    {src:"https://ahmed2398.github.io/Responsive-landing-page-For-products-sale/ecommerce-product-page-main/images/image-product-2.jpg",alt:"product 2"}, 
-    {src:"https://ahmed2398.github.io/Responsive-landing-page-For-products-sale/ecommerce-product-page-main/images/image-product-3.jpg",alt:"product 3"},
-    {src:"https://ahmed2398.github.io/Responsive-landing-page-For-products-sale/ecommerce-product-page-main/images/image-product-4.jpg",alt:"product 4"}
-  ]
+  const handleSlider=(e)=>{
+    document.getElementById("slideImage").src=e.target.value
+  }
+  
   return(
     <div className="m-div">
-      {images.map(image=>(
-        <img src={image.src} width="240"/>
-      ))}
+    
       <div className="m-div--image">
        
         <div className="m-div--image-icons">
@@ -41,8 +38,12 @@ const Main=()=>{
         <FontAwesomeIcon icon={faAngleRight} />
         </li>
         </ul>
-       <img src={image} />
-
+       <img src={image} id="slideImage" />
+        <div className="slider">
+          <ol>
+            <li><img src="https://ahmed2398.github.io/Responsive-landing-page-For-products-sale/ecommerce-product-page-main/images/image-product-2.jpg" onClick={()=>handleSlider("https://ahmed2398.github.io/Responsive-landing-page-For-products-sale/ecommerce-product-page-main/images/image-product-2.jpg")} width="240" /></li>
+          </ol>
+        </div>
       </div>
       </div>
       <div className="m-div--cont">
