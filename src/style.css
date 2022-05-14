@@ -166,26 +166,27 @@ body{
   font-size: 20px;
 }
 .slider{
+  width: 100%;
+  overflow: hidden;
+}
+.slider-wrapper{
   display: flex;
   width: 100%;
-  overflow:;
   animation: move-right 5s ease-in-out infinite alternate;
-  
+
 }
 
 @keyframes move-right{
-    25%{
-      transform: translateX(-200px);
+    33%{
+      transform: translateX(-100%);
     }
-    50%{
-      transform: translateX(-400px);
-    }
-    75%{
-      transform:translateX(-600px)
+    66%{
+      transform: translateX(-200%);
     }
     100%{
-      transform: translateX(-800px);
+      transform:translateX(-300%)
     }
+    10
 }
 /*media query*/
 @media screen and (max-width:500px)

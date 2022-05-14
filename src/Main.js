@@ -45,10 +45,12 @@ const images=[
         </li>
         </ul>    
         <div className="slider">
+          <div className="slider-wrapper">
         <img src={image} id="slideImage" />
          {images.map(image=>(
            <img src={image.src} className="slider-sec" onClick={()=>handleSlider(image.src)} />
          ))}
+         </div>
         </div>
       </div>
       </div>
