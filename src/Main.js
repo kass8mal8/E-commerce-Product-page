@@ -9,6 +9,12 @@ const Main=()=>{
   const image="https://lvcas-ca.github.io/E-commerce-product-page/images/image-product-1.jpg"
 
   const [count,setCount]=useState(0)
+  const handleAdd=()=>{
+       setCount(count+1)
+  }
+  const handleMinus=()=>{
+    setCount(count-1)
+  }
   return (
     <div className="m-div">
       <div className="m-div--image">
@@ -42,13 +48,13 @@ const Main=()=>{
           <div className="m-div--mod">
             <ul>
               <li>
-                <FontAwesomeIcon icon={faMinus}></FontAwesomeIcon>
+                <FontAwesomeIcon icon={faMinus}onClick={handleMinus}></FontAwesomeIcon>
                </li>
                <li>
             {count} 
                </li>
                <li>
-                <FontAwesomeIcon icon={faPlus}></FontAwesomeIcon>
+                <FontAwesomeIcon icon={faPlus}onClick={handleAdd}></FontAwesomeIcon>
                </li>
              </ul>
           </div>
