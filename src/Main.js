@@ -30,9 +30,9 @@ const Main=()=>{
              <li>$250.00</li>
           </ul>
           </div>
-          <div>
-            <FontAwesomeIcon icon={faMinus}></FontAwesomeIcon><p>{count} </p>
-            <FontAwesomeIcon icon={faPlus}></FontAwesomeIcon>
+          <div className="m-div--mod">
+            <FontAwesomeIcon icon={faMinus}className="m-div--mod-minus"></FontAwesomeIcon><p>{count} </p>
+            <FontAwesomeIcon icon={faPlus}className="m-div--mod-plus"></FontAwesomeIcon>
 
           </div>
           <button><FontAwesomeIcon icon={faCartShopping} className="m-div-i"></FontAwesomeIcon>add to cart</button>

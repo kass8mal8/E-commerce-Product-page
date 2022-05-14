@@ -98,10 +98,30 @@ body{
   border:hsl(26, 100%, 55%);
   width: 100%;
   padding: 10px;
-  height: 30%;
+  height: 0%;
   border-radius: 3px;
   font-size:17px;
   color: white;
+}
+.m-div--mod{
+  width: 98%;
+  background-color: lightgray;
+  padding: 3px;
+  margin: 5px 1px;
+  border-radius: 3px;
+}
+.m-div--mod p{
+   margin-left:50% ;
+}
+.m-div--mod-minus{
+  position: absolute;
+  bottom: -235px;
+  left: 30%;
+}
+.m-div--mod-plus{
+  position: absolute;
+  right: 25%;
+   bottom: -235px;
 }
 @media screen and (max-width:500px)
 {
