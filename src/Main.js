@@ -1,7 +1,9 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-  import {faArrowLeft, faCartShopping, faPrevious} from '@fortawesome/free-solid-svg-icons' 
+  import {faAngleLeft, faAngleRight, faCartShopping, faPrevious} from '@fortawesome/free-solid-svg-icons' 
 import {useState} from 'react'
+import { faMinus } from '@fortawesome/free-solid-svg-icons/faMinus'
+import { faPlus } from '@fortawesome/free-solid-svg-icons/faPlus'
 
 const Main=()=>{
   const image="https://lvcas-ca.github.io/E-commerce-product-page/images/image-product-1.jpg"
@@ -10,7 +12,8 @@ const Main=()=>{
   return (
     <div className="m-div">
       <div className="m-div--image">
-         <img src={image} />
+         <FontAwesomeIcon icon={faAngleLeft} /><img src={image} />
+         <FontAwesomeIcon icon={faAngleRight} />
       </div>
       <div className="m-div--cont">
           <h2>sneakers company</h2>
@@ -28,7 +31,9 @@ const Main=()=>{
           </ul>
           </div>
           <div>
-            <FontAwesomeIcon icon={faArrowLeft}></FontAwesomeIcon><p>{count} </p>
+            <FontAwesomeIcon icon={faMinus}></FontAwesomeIcon><p>{count} </p>
+            <FontAwesomeIcon icon={faPlus}></FontAwesomeIcon>
+
           </div>
           <button><FontAwesomeIcon icon={faCartShopping} className="m-div-i"></FontAwesomeIcon>add to cart</button>
       </div>
