@@ -56,16 +56,30 @@ body{
 /*main content styles*/
 .m-div{
   width:100%;
+  margin-top: -4px;
 }
 .m-div--image{
   width: 100vw;
   margin-left: -8px;
+}
+.m-div--image-icons li{
+   list-style: none;
+   display: inline-flex;
+   position: absolute;
+   top: 200px;
+}
+.m-div--image-icons li:nth-of-type(1){
+  left: 20px;
+}
+.m-div--image-icons li:nth-of-type(2){
+  right: 10px;
 }
 .m-div--image img{
   width: 100%;
 }
 .m-div--cont{
   padding: 5px;
+  margin-top: -20px;
 }
 .m-div--cont h2{
    color: hsl(25, 100%, 60%);

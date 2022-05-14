@@ -12,8 +12,17 @@ const Main=()=>{
   return (
     <div className="m-div">
       <div className="m-div--image">
-         <FontAwesomeIcon icon={faAngleLeft} /><img src={image} />
-         <FontAwesomeIcon icon={faAngleRight} />
+        <div className="m-div--image-icons">
+        <ul>
+          <li>
+         <FontAwesomeIcon icon={faAngleLeft} />
+         </li>
+         <li>
+        <FontAwesomeIcon icon={faAngleRight} />
+        </li>
+        </ul>
+      </div>
+<img src={image} />
       </div>
       <div className="m-div--cont">
           <h2>sneakers company</h2>
