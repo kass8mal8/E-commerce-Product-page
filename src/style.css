@@ -219,12 +219,29 @@ body{
   .m-div--list li:nth-of-type(3){
     position: absolute;
     margin-top: 40px;
-    left: -40px;
+    left: -43px;
   }
   .m-div--list li:nth-of-type(1){
     margin-left: -20px;
   }
   .h-div--bars{
     display: none;
+  }
+  .m-div--image{
+    padding-left: 20px;
+  }
+  .m-div--image img{
+    border-radius: 10px;
+  }
+  .m-div--mod{
+    margin-top: 10px;
+    position: absolute;
+    width: 80px;
+    left: 5px;
+  }
+  .m-div button{
+    width: 100px;
+    position: absolute;
+    right: 10px;
   }
 }
