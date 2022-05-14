@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-  import {faCartShopping } from '@fortawesome/free-solid-svg-icons' 
+  import {faArrowLeft, faCartShopping, faPrevious} from '@fortawesome/free-solid-svg-icons' 
 import {useState} from 'react'
 
 const Main=()=>{
@@ -26,6 +26,9 @@ const Main=()=>{
              <li>50%</li>
              <li>$250.00</li>
           </ul>
+          </div>
+          <div>
+            <FontAwesomeIcon icon={faArrowLeft}></FontAwesomeIcon><p>{count} </p>
           </div>
           <button><FontAwesomeIcon icon={faCartShopping} className="m-div-i"></FontAwesomeIcon>add to cart</button>
       </div>
