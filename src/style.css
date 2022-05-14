@@ -71,10 +71,11 @@ body{
    color: hsl(25, 100%, 60%);
 }
 .m-div--list{
-    width: 100%;
+    width: 100vw;
+    margin-left: -15px;
 }
 .m-div--list ul{
-  margin-left: -40px;
+  margin-left: -20px;
 }
 .m-div--list li{
   list-style: none;
@@ -88,7 +89,7 @@ body{
   margin-left: 5%;
 }
 .m-div--list li:nth-of-type(3){
-    margin-left: 51%;
+    margin-left: 55%;
     color: gray;
     text-decoration: line-through;
 }
@@ -101,7 +102,7 @@ body{
   border:hsl(26, 100%, 55%);
   width: 100%;
   padding: 10px;
-  height: 0%;
+  height: 50px;
   border-radius: 3px;
   font-size:17px;
   color: white;
@@ -110,14 +111,18 @@ body{
 .m-div--mod li{
   list-style: none;
   display: inline-flex;
+  padding-top: 6px;
 }
 .m-div ul{
-  margin-right: 15%;
+  margin-right: 5%;
+  margin-left: 4%;
+  padding:5px;
 }
 .m-div--mod{
-  width: 98%;
+  width: 100%;
   background-color: lightgray;
-  padding: 3px;
+  height: 50px;
+  padding-top: 0px;
   margin: 5px 1px;
   border-radius: 3px;
   text-align: center;
@@ -163,6 +168,6 @@ body{
 }
 @media screen and (max-width:375px){
   .m-div--list li:nth-of-type(3){
-    margin-left:32%;
+    margin-left:40%;
   }
 }
