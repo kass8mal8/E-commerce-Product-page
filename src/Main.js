@@ -20,8 +20,16 @@ const Main=()=>{
             setCount(count-1)
       }
   }
-  return (
+  const images=[
+    {src:"https://ahmed2398.github.io/Responsive-landing-page-For-products-sale/ecommerce-product-page-main/images/image-product-2.jpg",alt:"product 2"}, 
+    {src:"https://ahmed2398.github.io/Responsive-landing-page-For-products-sale/ecommerce-product-page-main/images/image-product-3.jpg",alt:"product 3"},
+    {src:"https://ahmed2398.github.io/Responsive-landing-page-For-products-sale/ecommerce-product-page-main/images/image-product-4.jpg",alt:"product 4"}
+  ]
+  return(
     <div className="m-div">
+      {images.map(image=>(
+        <img src={image.src} width="240"/>
+      ))}
       <div className="m-div--image">
        
         <div className="m-div--image-icons">
