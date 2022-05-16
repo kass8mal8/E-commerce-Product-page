@@ -1,5 +1,5 @@
 import React from 'react'
-const ImageSlider=()=>{
+const Images=()=>{
   const images=[
     {src:"https://lvcas-ca.github.io/E-commerce-product-page/images/image-product-1.jpg",id:1},
     {src:"https://ahmed2398.github.io/Responsive-landing-page-For-products-sale/ecommerce-product-page-main/images/image-product-2.jpg",id:2}, 
@@ -10,4 +10,4 @@ const ImageSlider=()=>{
     <div></div>
   )
 }
-export default ImageSlider
+export default Image

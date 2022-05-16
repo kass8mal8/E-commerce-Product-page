@@ -6,7 +6,6 @@ import { faMinus } from '@fortawesome/free-solid-svg-icons/faMinus'
 import { faPlus } from '@fortawesome/free-solid-svg-icons/faPlus'
 
 const Main=()=>{
-  const image="https://lvcas-ca.github.io/E-commerce-product-page/images/image-product-1.jpg"
 
   const [count,setCount]=useState(0)
   const handleAdd=()=>{
@@ -18,14 +17,8 @@ const Main=()=>{
       }
       else{
             setCount(count-1)
-      }
-  }
-const images=[
-  {src:"https://ahmed2398.github.io/Responsive-landing-page-For-products-sale/ecommerce-product-page-main/images/image-product-2.jpg"},
-  {src:"https://ahmed2398.github.io/Responsive-landing-page-For-products-sale/ecommerce-product-page-main/images/image-product-3.jpg"}, 
-  {src:"https://ahmed2398.github.io/Responsive-landing-page-For-products-sale/ecommerce-product-page-main/images/image-product-4.jpg"}
-]
-
+      } 
+  } 
   const handleSlider=(e)=>{
     document.getElementById("slideImage").src=e
   }
@@ -49,10 +42,7 @@ const images=[
         </ul>    
         <div className="slider">
           <div id="slider-wrapper">
-        <img src={image} id="slideImage" />
-         {images.map(image=>(
-           <img src={image.src} className="slider-sec" onClick={()=>handleSlider(image.src)} />
-         ))}
+    
          </div>
         </div>
       </div>
