@@ -10,10 +10,10 @@ const images=[
 ] 
   return(
     <div className ="m-div--image">
-      {images.map((image, index) =>
+      {images.map((image) =>
         (
-          <div className={slideIndex === index+1 ?  'slide active' : 'slide'}key={image.id}>
-          {slideIndex === index && (<img src={image.id} />)}
+          <div className={slideIndex === image.id ?  'slide active' : 'slide'} key={image.id}>
+          {slideIndex === image.id && (<img src={image.id} />)  }
                     </div>
         )
         )}
