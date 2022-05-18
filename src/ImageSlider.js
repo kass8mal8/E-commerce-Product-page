@@ -9,15 +9,15 @@ const images=[
 
 ] 
   return(
-    <div>
-      {images.map(image=>
+    <div className ="m-div--image">
+      {images.map((image, index) =>
         (
-          <div className={slideIndex === index ?  'slide active' : 'slide'}key={index}>
-          {slideIndex === index && (<img src={index+1} />)}
+          <div className={slideIndex === index+1 ?  'slide active' : 'slide'}key={image.id}>
+          {slideIndex === index && (<img src={image.id} />)}
                     </div>
         )
         )}
     </div>
   )
 }
-export default Image
+export default ImageSlider
