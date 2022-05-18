@@ -13,7 +13,7 @@ const images=[
       {images.map((image) =>
         (
           <div className={slideIndex === image.id ?  'slide active' : 'slide'} key={image.id}>
-          {slideIndex === image.id && (<img src={image.id} />)  }
+          {slideIndex === image.id && (<img src={image.src} />)  }
                     </div>
         )
         )}
