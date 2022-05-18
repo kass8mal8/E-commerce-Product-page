@@ -1,6 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-  import {faAngleLeft, faAngleRight, faCartShopping, faPrevious} from '@fortawesome/free-solid-svg-icons' 
+
+  import { faCartShopping} from '@fortawesome/free-solid-svg-icons' 
 import {useState} from 'react'
 import { faMinus } from '@fortawesome/free-solid-svg-icons/faMinus'
 import { faPlus } from '@fortawesome/free-solid-svg-icons/faPlus'
@@ -23,9 +24,7 @@ const Main=()=>{
   const handleSlider=(e)=>{
     document.getElementById("slideImage").src=e
   }
-  const handleRight=()=>{
-    
-  }
+  
 
 
 
@@ -34,19 +33,9 @@ const Main=()=>{
     
       <div className="m-div--image">
         <ImageSlider />
-        <div className="m-div--image-icons">
-        <ul>
-          <li>
-         <FontAwesomeIcon icon={faAngleLeft} />
-         </li>
-         <li>
-        <FontAwesomeIcon icon={faAngleRight} onClick={handleRight}/>
-        </li>
-        </ul>    
         <div className="slider">
           <div id="slider-wrapper">
     
-         </div>
         </div>
       </div>
       </div>

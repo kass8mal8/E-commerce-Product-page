@@ -64,7 +64,7 @@ body{
 /*main content styles*/
 .m-div{
   width:100%;
-
+  margin-top: -40px;
 }
 .m-div--image{
   width: 100vw;
