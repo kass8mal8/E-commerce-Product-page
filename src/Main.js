@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {useState} from 'react'
 import { faMinus } from '@fortawesome/free-solid-svg-icons/faMinus'
 import { faPlus } from '@fortawesome/free-solid-svg-icons/faPlus'
+import ImageSlider from './ImageSlider.js '
 
 const Main=()=>{
 
@@ -23,14 +24,21 @@ const Main=()=>{
     document.getElementById("slideImage").src=e
   }
   const handleRight=()=>{
-    document.getElementById("slider-wrapper").style.animation="move-right 3s 1"
     
   }
+
+const images=[
+  {src:"https://lvcas-ca.github.io/E-commerce-product-page/images/image-product-1.jpg",id:1}, 
+  {src:"https://ahmed2398.github.io/Responsive-landing-page-For-products-sale/ecommerce-product-page-main/images/image-product-2.jpg",id:2},
+  {src:"https://ahmed2398.github.io/Responsive-landing-page-For-products-sale/ecommerce-product-page-main/images/image-product-3.jpg",id:3},
+  {src:"https://ahmed2398.github.io/Responsive-landing-page-For-products-sale/ecommerce-product-page-main/images/image-product-4.jpg",id:4}
+]
+
   return(
     <div className="m-div">
     
       <div className="m-div--image">
-       
+        <ImageSlider images={images} />
         <div className="m-div--image-icons">
         <ul>
           <li>
