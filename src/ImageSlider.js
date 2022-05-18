@@ -13,18 +13,27 @@ const images=[
 
 ] 
 
-const handleRight=()=>{
-  
+const handleNext=()=>{
+   if(slideIndex !== images.length ){
+     setSlideIndex(slideIndex+1)
+   }
+   else{
+     setSlideIndex(slideIndex-1)
+   }
+}
+
+const handlePrev=()=>{
+    setSlideIndex(slideIndex==1 ?images.length-1  :slideIndex-1)
 }
   return(
     <div className ="m-div--image">
         <div className="m-div--image-icons">
         <ul>
          <li>
-           <FontAwesomeIcon icon={faAngleLeft} />
+           <FontAwesomeIcon icon={faAngleLeft} onClick={handlePrev} />
         </li>
         <li>
-          <FontAwesomeIcon icon={faAngleRight} onClick={handleRight}/>
+          <FontAwesomeIcon icon={faAngleRight} onClick={handleNext}/>
        </li>
       </ul>    
     </div>
