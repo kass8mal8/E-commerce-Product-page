@@ -227,7 +227,8 @@ body{
     grid-template-columns:50% 50%;
   }
   .m-div--image{
-    width: 100%;
+     width: 100%;
+
   }
   .m-div--cont{
     padding-left: 50px;
