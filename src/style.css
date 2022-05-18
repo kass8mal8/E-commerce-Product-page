@@ -3,6 +3,14 @@ body{
   font-family: 'Kumbh sans';
   font-size: 16px;
 }
+.slide{
+   opacity: 0;
+   transition-duration: 1s ease;
+}
+.slide.active{
+    opacity: 1;
+    transition-duration: 1s;
+}
 .h-div{
   display: inline-flex;
   width:100%;
