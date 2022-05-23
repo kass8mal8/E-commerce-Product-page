@@ -5,9 +5,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {useState} from 'react'
 import { faMinus } from '@fortawesome/free-solid-svg-icons/faMinus'
 import { faPlus } from '@fortawesome/free-solid-svg-icons/faPlus'
-import ImageSlider from './ImageSlider.js '
+import ImageSlider from './ImageSlider'
 
-const Main=()=>{
+const Main=({handleCart})=>{
 
   const [count,setCount]=useState(0)
   const handleAdd=()=>{
@@ -67,7 +67,7 @@ const Main=()=>{
                </li>
              </ul>
           </div>
-          <button><FontAwesomeIcon icon={faCartShopping} className="m-div-i"></FontAwesomeIcon>add to cart</button>
+          <button onClick={handleCart}><FontAwesomeIcon icon={faCartShopping} className="m-div-i"></FontAwesomeIcon >add to cart</button>
       </div>
     </div>
   )
