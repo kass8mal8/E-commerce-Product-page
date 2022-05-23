@@ -9,20 +9,11 @@ const Header =({count})=>{
 
   const handleToggle=()=>{
     document.getElementById("toggle").classList.toggle("active")
+
   }
   const handleCartView=()=>{
      document.getElementById('view-cart').classList.toggle('visible')
      
-     if(count == 0 ){
-        return(
-          <p>Cart is empty</p>
-        )
-     }
-     else{
-       return(
-         <p>Cart is full</p>
-       )
-     }
   }
   const handleCart=()=>{
 
@@ -36,6 +27,10 @@ const Header =({count})=>{
           <div style={{borderBottom:"2px solid gray",margin:'auto -10px'}}>
           <h4>Cart</h4>
           </div>
+          {count !== 0 ? <div>
+            <p>Your cart is empty </p>
+          </div>:<div>
+            <p>Your cart is full</p></div>}
         </div>
         <FontAwesomeIcon icon={faBars} className="h-div--bars" onClick={handleToggle}></FontAwesomeIcon><h3>sneakers</h3>
         <div className="top-nav" id="toggle">
@@ -55,5 +50,7 @@ const Header =({count})=>{
         <Main handleCart={handleCart} />
     </div>
   )
+  
+
 }
 export default Header
