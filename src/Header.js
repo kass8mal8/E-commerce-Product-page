@@ -11,7 +11,7 @@ const Header =({count})=>{
     document.getElementById("toggle").classList.toggle("active")
   }
   const handleCartView=()=>{
-     document.getElementById('view-cart').style.display='block'
+     document.getElementById('view-cart').classList.toggle('visible')
   }
   const handleCart=()=>{
 

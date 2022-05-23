@@ -192,6 +192,9 @@ body{
   height: 50%;
   display:none;
 }
+.h-div--cartview.visible{
+    display: block;
+}
 .h-div--cartview h4{
   margin-left:4%;
 }
