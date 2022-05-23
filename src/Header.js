@@ -12,6 +12,17 @@ const Header =({count})=>{
   }
   const handleCartView=()=>{
      document.getElementById('view-cart').classList.toggle('visible')
+     
+     if(count == 0 ){
+        return(
+          <p>Cart is empty</p>
+        )
+     }
+     else{
+       return(
+         <p>Cart is full</p>
+       )
+     }
   }
   const handleCart=()=>{
 
@@ -19,6 +30,7 @@ const Header =({count})=>{
 
   return(
     <div>
+        
         <div className="h-div">
         <div className="h-div--cartview" id="view-cart">
           <div style={{borderBottom:"2px solid gray",margin:'auto -10px'}}>
