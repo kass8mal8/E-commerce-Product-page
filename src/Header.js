@@ -4,20 +4,27 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import "./style.css"
 import Main from './Main'
 
-const Header =()=>{
+const Header =({count})=>{
   const avatar="https://aakashhelloworld.github.io/css2/images/avatar-shanai.png"
 
   const handleToggle=()=>{
     document.getElementById("toggle").classList.toggle("active")
   }
-  const handleCart=()=>{
-       if(count>0){
-         alert("yay")
-       }
+  const handleCartView=()=>{
+     document.getElementById('view-cart').style.display='block'
   }
+  const handleCart=()=>{
+
+  }
+
   return(
     <div>
         <div className="h-div">
+        <div className="h-div--cartview" id="view-cart">
+          <div style={{borderBottom:"2px solid gray",margin:'auto -10px'}}>
+          <h4>Cart</h4>
+          </div>
+        </div>
         <FontAwesomeIcon icon={faBars} className="h-div--bars" onClick={handleToggle}></FontAwesomeIcon><h3>sneakers</h3>
         <div className="top-nav" id="toggle">
           <FontAwesomeIcon icon={faClose} className="top-nav--close" onClick={handleToggle}></FontAwesomeIcon>
@@ -30,10 +37,10 @@ const Header =()=>{
 
         </ul>
         </div>
-        <FontAwesomeIcon icon={faCartShopping} className="h-div--cart"></FontAwesomeIcon>
+        <FontAwesomeIcon icon={faCartShopping} className="h-div--cart" onClick={handleCartView}></FontAwesomeIcon>
         <img src={avatar} width="50px" alt="avatar"/>
         </div>
-        <Main handleCart={handleCart} count={count} />
+        <Main handleCart={handleCart} />
     </div>
   )
 }

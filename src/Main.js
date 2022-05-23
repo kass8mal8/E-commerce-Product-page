@@ -18,7 +18,7 @@ const Main=({handleCart})=>{
         return false
       }
       else{
-            setCount(count-1)
+        setCount(count-1)
       } 
   } 
   const handleSlider=(e)=>{
@@ -32,7 +32,7 @@ const Main=({handleCart})=>{
     <div className="m-div">
     
       <div className="m-div--image">
-        <ImageSlider />
+        <ImageSlider count={count} />
         <div className="slider">
           <div id="slider-wrapper">
     

@@ -182,7 +182,19 @@ body{
   width: 100%;
   
 }
-
+.h-div--cartview{
+  width: 90%;
+  position:absolute;
+  top:15%;
+  padding:10px ;
+  background: white;
+  border-radius: 5px;
+  height: 50%;
+  display:none;
+}
+.h-div--cartview h4{
+  margin-left:4%;
+}
 
 /*media query*/
 @media screen and (max-width:500px)
