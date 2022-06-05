@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
   import { faBars,faCartShopping, faClose } from '@fortawesome/free-solid-svg-icons' 
 import "./style.css"
 
-const Header =({count, setCount })=>{
+const Header =({count, setCount, isZero, setIsZero })=>{
   const avatar="https://aakashhelloworld.github.io/css2/images/avatar-shanai.png"
 
   const handleToggle=()=>{
@@ -25,10 +25,12 @@ const Header =({count, setCount })=>{
           <div style={{borderBottom:"2px solid gray",margin:'auto -10px'}}>
           <h4>Cart</h4>
           </div>
-          {count !== 0 ? <div>
+          {count == 0 ? <div>
             <p>Your cart is empty </p>
-          </div>:<div>
-            <p>Your cart is full</p></div>}
+          </div>:
+           <div>
+            <img src={image} />
+          </div>} 
         </div>
         <FontAwesomeIcon icon={faBars} className="h-div--bars" onClick={handleToggle}></FontAwesomeIcon><h3>sneakers</h3>
         <div className="top-nav" id="toggle">

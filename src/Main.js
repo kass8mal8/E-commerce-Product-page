@@ -7,7 +7,7 @@ import { faMinus } from '@fortawesome/free-solid-svg-icons/faMinus'
 import { faPlus } from '@fortawesome/free-solid-svg-icons/faPlus'
 import ImageSlider from './ImageSlider'
 
-const Main=({count,setCount, isZero,setIsZer })=>{
+const Main=({count,setCount, isZero,setIsZero })=>{
   
   const handleMinus=()=>{
       if(count==0){
