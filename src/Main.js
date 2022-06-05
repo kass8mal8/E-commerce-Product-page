@@ -27,7 +27,7 @@ const Main=({count,setCount })=>{
 
   return(
     <div className="m-div">
-    
+      <small>{count} </small>
       <div className="m-div--image">
         <ImageSlider count={count} />
         <div className="slider">
