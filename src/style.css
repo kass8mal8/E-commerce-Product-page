@@ -20,9 +20,9 @@ body{
 
 }
 .h-div h3{
-  font-size: 23px;
+  font-size: 27px;
   font-weight: 700;
-  margin-top: -7px;
+  margin-top: -5px;
   margin-left: 10px;
 }
 .h-div--cart{
@@ -35,12 +35,12 @@ body{
   opacity: 65%;
   width:25px;
   height: 25px;
-  margin-left:0px;
+  margin-left:10px;
 }
 .h-div img{
   position: absolute;
   right: 10px;
-  top:14px;
+  top:18px;
   height: 30px;
   width: 30px;
 }
@@ -61,6 +61,7 @@ body{
 }
 .top-nav--close{
   display: none;
+  height:25px;
 }
 /*main content styles*/
 .m-div{
@@ -186,7 +187,7 @@ body{
 .h-div--cartview{
   width: 90%;
   position:absolute;
-  top:15%;
+  top:15%;33
   padding:10px ;
   background: white;
   border-radius: 5px;
