@@ -30,7 +30,7 @@ const Main=({count,setCount })=>{
 
   return(
     <div className="m-div">
-      <small>{count} </small>
+      {!isZero &&<small>{count} </small>}
       <div className="m-div--image">
         <ImageSlider count={count} />
         <div className="slider">
@@ -67,7 +67,7 @@ const Main=({count,setCount })=>{
                </li>
              </ul>
           </div>
-          <button><FontAwesomeIcon icon={faCartShopping} className="m-div-i"></FontAwesomeIcon >add to cart</button>
+          <button onClick={handleCart}><FontAwesomeIcon icon={faCartShopping} className="m-div-i"></FontAwesomeIcon >add to cart</button>
       </div>
     </div>
   )
