@@ -32,7 +32,7 @@ const Header =({count, setCount, isZero, setIsZero })=>{
           <div>
            <div >
             <img src={image} width="200" style={{position:'absolute',left:'10px',top:'32%',width:'100px',height:'100px'} } />
-            <p style={{float:'right'}}>fall limited edition... <br/>{count} X 125.00 = {price} </p>
+            <p style={{float:'right'}}>fall limited edition... <br/>{count} X 125.00  ${price}.00 </p>
           </div>
           <button>check out </button>
           </div>} 
