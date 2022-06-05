@@ -16,6 +16,7 @@ const Header =({count, setCount, isZero, setIsZero })=>{
   }
  const image="https://lvcas-ca.github.io/E-commerce-product-page/images/image-product-1.jpg"
   
+ const price=count*125.00
 
   return(
     <div>
@@ -31,7 +32,7 @@ const Header =({count, setCount, isZero, setIsZero })=>{
           <div>
            <div >
             <img src={image} width="200" style={{position:'absolute',left:'10px',top:'32%',width:'100px',height:'100px'} } />
-            <p style={{float:'right'}}>fall limited edition... <br/>{count} X 125.00</p>
+            <p style={{float:'right'}}>fall limited edition... <br/>{count} X 125.00 = {price} </p>
           </div>
           <button>check out </button>
           </div>} 
