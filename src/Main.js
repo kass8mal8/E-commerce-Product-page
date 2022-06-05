@@ -8,7 +8,6 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons/faPlus'
 import ImageSlider from './ImageSlider'
 
 const Main=({count,setCount })=>{
-
   
   const handleMinus=()=>{
       if(count==0){
@@ -22,11 +21,9 @@ const Main=({count,setCount })=>{
     document.getElementById("slideImage").src=e
   }
   
-  const [isZero, setIsZero] =useState(true)
   const handleCart=()=>{
     setIsZero(false)
-  } 
-
+  }
 
   return(
     <div className="m-div">

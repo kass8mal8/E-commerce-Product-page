@@ -14,7 +14,9 @@ const Header =({count, setCount })=>{
      document.getElementById('view-cart').classList.toggle('visible')
      
   }
+ const image="https://lvcas-ca.github.io/E-commerce-product-page/images/image-product-1.jpg"
   
+
   return(
     <div>
         
