@@ -47,7 +47,6 @@ const Header =({count})=>{
         <FontAwesomeIcon icon={faCartShopping} className="h-div--cart" onClick={handleCartView}></FontAwesomeIcon>
         <img src={avatar} width="50px" alt="avatar"/>
         </div>
-        <Main handleCart={handleCart} />
     </div>
   )
   
