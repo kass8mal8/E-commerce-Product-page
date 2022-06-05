@@ -29,11 +29,12 @@ body{
   opacity:65%;
   position: absolute;
   right: 55px;
-  
+  height:25px; 
 }
 .h-div--bars{
   opacity: 65%;
   width:25px;
+  height: 25px;
   margin-left:0px;
 }
 .h-div img{
@@ -220,6 +221,7 @@ body{
   .top-nav.active{
     left:-18px;
     transition: 0.4s ease-in;
+    z-index: 4;
   }
   .top-nav--close{
     display: block;
