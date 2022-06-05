@@ -8,7 +8,7 @@ export default function App() {
   return (
     <div>   
       <Header count={count} setCount={setCount }/>
-      <Main count={count}  setCount={setC} />
+      <Main count={count}  setCount={setCount } />
     
     </div>
   );
