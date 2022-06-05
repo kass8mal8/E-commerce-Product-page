@@ -22,7 +22,10 @@ const Main=({count,setCount })=>{
     document.getElementById("slideImage").src=e
   }
   
-
+  const [isZero, setIsZero] =useState(true)
+  const handleCart=()=>{
+    setIsZero(false)
+  } 
 
 
   return(

@@ -14,9 +14,7 @@ const Header =({count, setCount })=>{
      document.getElementById('view-cart').classList.toggle('visible')
      
   }
-  const handleCart=()=>{
-
-  }
+  
 
   return(
     <div>
