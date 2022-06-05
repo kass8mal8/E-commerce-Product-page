@@ -29,7 +29,7 @@ const Header =({count, setCount, isZero, setIsZero })=>{
             <p>Your cart is empty </p>
           </div>:
            <div style={{display:'flex',flexFlow:'row'}}>
-            <img src={image} width="100" style={{position:'absolute',left:'20px',top:'30%'} } />
+            <img src={image} width="200" style={{position:'absolute',left:'20px',top:'30%',width:'100px',height:'100px'} } />
           </div>} 
         </div>
         <FontAwesomeIcon icon={faBars} className="h-div--bars" onClick={handleToggle}></FontAwesomeIcon><h3>sneakers</h3>
