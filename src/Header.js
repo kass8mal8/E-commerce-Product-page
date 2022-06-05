@@ -2,7 +2,6 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
   import { faBars,faCartShopping, faClose } from '@fortawesome/free-solid-svg-icons' 
 import "./style.css"
-import Main from './Main'
 
 const Header =({count})=>{
   const avatar="https://aakashhelloworld.github.io/css2/images/avatar-shanai.png"
@@ -23,6 +22,7 @@ const Header =({count})=>{
     <div>
         
         <div className="h-div">
+        <small>{count}</small>
         <div className="h-div--cartview" id="view-cart">
           <div style={{borderBottom:"2px solid gray",margin:'auto -10px'}}>
           <h4>Cart</h4>
