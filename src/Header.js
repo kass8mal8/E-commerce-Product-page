@@ -28,8 +28,8 @@ const Header =({count, setCount, isZero, setIsZero })=>{
           {count == 0 ? <div>
             <p>Your cart is empty </p>
           </div>:
-           <div>
-            <img src={image} />
+           <div style={{display:'flex',flexFlow:'row'}}>
+            <img src={image} width="100" style={{position:'absolute',left:'20px',top:'30%'} } />
           </div>} 
         </div>
         <FontAwesomeIcon icon={faBars} className="h-div--bars" onClick={handleToggle}></FontAwesomeIcon><h3>sneakers</h3>
