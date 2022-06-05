@@ -199,14 +199,14 @@ body{
   
 }
 .h-div--cartview{
-  width: 90%;
+  width: 85%;
   position:absolute;
   top:15%;
   left: 15px;
   padding:10px ;
   background: white;
   border-radius: 5px;
-  height: 50%;
+  height: 40%;
   display:none;
 }
 .h-div--cartview.visible{
