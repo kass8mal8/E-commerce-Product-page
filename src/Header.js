@@ -29,8 +29,9 @@ const Header =({count, setCount, isZero, setIsZero })=>{
             <p>Your cart is empty </p>
           </div>:
           <div>
-           <div style={{display:'flex',flexFlow:'row'}}>
-            <img src={image} width="200" style={{position:'absolute',left:'10px',top:'30%',width:'100px',height:'100px'} } />
+           <div >
+            <img src={image} width="200" style={{position:'absolute',left:'10px',top:'32%',width:'100px',height:'100px'} } />
+            <p style={{float:'right'}}>fall limited edition... <br/>{count} X 125.00</p>
           </div>
           <button>check out </button>
           </div>} 
