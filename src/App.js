@@ -9,7 +9,7 @@ export default function App() {
 
   return (
     <div>   
-      <Header count={count} setCount={setCount } isZero={is} set/>
+      <Header count={count} setCount={setCount } isZero={isZero} setIsZero={setIsZero } />
       <Main count={count}  setCount={setCount } isZero={isZero} setIsZero={setIsZero } />
     
     </div>
