@@ -27,11 +27,11 @@ const Header =({count, setCount, isZero, setIsZero })=>{
           <h4>Cart</h4>
           </div>
           {count == 0 ? <div>
-            <p>Your cart is empty </p>
+            <p style={{color:'gray',marginTop:'25%',textAlign:'center'}}>Your cart is empty </p>
           </div>:
           <div>
            <div >
-            <img src={image} width="200" style={{position:'absolute',left:'10px',top:'32%',width:'100px',height:'100px'} } />
+            <img src={image} width="200" style={{position:'absolute',left:'10px',top:'32%',width:'100px',height:'100px', borderRadius:'3px'} } />
             <p style={{float:'right'}}>fall limited edition... <br/>{count} X 125.00  ${price}.00 </p>
           </div>
           <button>check out </button>
