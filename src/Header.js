@@ -1,10 +1,11 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-  import { faBars,faCartShopping, faClose } from '@fortawesome/free-solid-svg-icons' 
+import { faBars,faCartShopping, faClose } from '@fortawesome/free-solid-svg-icons' 
 import "./style.css"
+import avatar from './images/avatar.png'
+import image from './images/product-1.jpg'
 
 const Header =({count, setCount, isZero, setIsZero })=>{
-  const avatar="images/avatar.png"
 
   const handleToggle=()=>{
     document.getElementById("toggle").classList.toggle("active")
@@ -14,7 +15,6 @@ const Header =({count, setCount, isZero, setIsZero })=>{
      document.getElementById('view-cart').classList.toggle('visible')
      
   }
- const image="images/product-1.jpg"
   
  const price=count*125.00
 
