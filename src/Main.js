@@ -32,10 +32,10 @@ const Main=({count,setCount, isZero,setIsZero })=>{
         <ImageSlider count={count} />
         <div className="slider">
           <div id="slider-wrapper">
-    
         </div>
       </div>
       </div>
+      
       <div className="m-div--cont">
           <h2>sneakers company</h2>
           <h3>
@@ -54,17 +54,24 @@ const Main=({count,setCount, isZero,setIsZero })=>{
           <div className="m-div--mod">
             <ul>
               <li>
-                <FontAwesomeIcon icon={faMinus}onClick={handleMinus}></FontAwesomeIcon>
-               </li>
-               <li>
+                <FontAwesomeIcon icon={faMinus}onClick={handleMinus}>
+                </FontAwesomeIcon>
+              </li>
+              <li>
             {count} 
-               </li>
-               <li>
-                <FontAwesomeIcon icon={faPlus}onClick={() =>setCount(count+1) }></FontAwesomeIcon>
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faPlus}onClick={() =>setCount(count+1) }>
+                </FontAwesomeIcon>
                </li>
              </ul>
           </div>
-          <button onClick={handleCart}><FontAwesomeIcon icon={faCartShopping} className="m-div-i"></FontAwesomeIcon >add to cart</button>
+          
+          <button onClick={handleCart}>
+            <FontAwesomeIcon icon={faCartShopping} className="m-div-i">
+            </FontAwesomeIcon >add to cart
+          </button>
+          
       </div>
     </div>
   )
